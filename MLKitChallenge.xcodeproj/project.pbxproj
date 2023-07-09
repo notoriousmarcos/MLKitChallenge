@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4738B28F3B5389FD3F044C /* Pods_MLKitChallenge_MLKitChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E272F2D1238A56C9621557 /* Pods_MLKitChallenge_MLKitChallengeTests.framework */; };
+		AB3F31F7D3DB095F61887AEE /* Pods_MLKitChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F850800646AD7826F7D0735A /* Pods_MLKitChallenge.framework */; };
 		B7F673582A5B1FF300D8B01B /* MLKitChallenge.docc in Sources */ = {isa = PBXBuildFile; fileRef = B7F673572A5B1FF300D8B01B /* MLKitChallenge.docc */; };
 		B7F6735E2A5B1FF300D8B01B /* MLKitChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F673532A5B1FF300D8B01B /* MLKitChallenge.framework */; };
 		B7F673632A5B1FF300D8B01B /* MLKitChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673622A5B1FF300D8B01B /* MLKitChallengeTests.swift */; };
@@ -24,11 +26,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43877EF3A97890D3C345E963 /* Pods-MLKitChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge.release.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge/Pods-MLKitChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		59E272F2D1238A56C9621557 /* Pods_MLKitChallenge_MLKitChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLKitChallenge_MLKitChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F673532A5B1FF300D8B01B /* MLKitChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MLKitChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F673562A5B1FF300D8B01B /* MLKitChallenge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLKitChallenge.h; sourceTree = "<group>"; };
 		B7F673572A5B1FF300D8B01B /* MLKitChallenge.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MLKitChallenge.docc; sourceTree = "<group>"; };
 		B7F6735D2A5B1FF300D8B01B /* MLKitChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLKitChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F673622A5B1FF300D8B01B /* MLKitChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitChallengeTests.swift; sourceTree = "<group>"; };
+		CEFDC6CD65682856F27D0F1A /* Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D854FBE0AD2C90478A09D26C /* Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D987BB80BAC0650BC964692A /* Pods-MLKitChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge/Pods-MLKitChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F850800646AD7826F7D0735A /* Pods_MLKitChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLKitChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3F31F7D3DB095F61887AEE /* Pods_MLKitChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +53,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7F6735E2A5B1FF300D8B01B /* MLKitChallenge.framework in Frameworks */,
+				7E4738B28F3B5389FD3F044C /* Pods_MLKitChallenge_MLKitChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59871A9FA7AD5354A6012C4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D987BB80BAC0650BC964692A /* Pods-MLKitChallenge.debug.xcconfig */,
+				43877EF3A97890D3C345E963 /* Pods-MLKitChallenge.release.xcconfig */,
+				CEFDC6CD65682856F27D0F1A /* Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig */,
+				D854FBE0AD2C90478A09D26C /* Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B7F673492A5B1FF300D8B01B = {
 			isa = PBXGroup;
 			children = (
 				B7F673552A5B1FF300D8B01B /* MLKitChallenge */,
 				B7F673612A5B1FF300D8B01B /* MLKitChallengeTests */,
 				B7F673542A5B1FF300D8B01B /* Products */,
+				59871A9FA7AD5354A6012C4D /* Pods */,
+				C7062F27CACC3E82E4BFA9BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +109,15 @@
 			path = MLKitChallengeTests;
 			sourceTree = "<group>";
 		};
+		C7062F27CACC3E82E4BFA9BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F850800646AD7826F7D0735A /* Pods_MLKitChallenge.framework */,
+				59E272F2D1238A56C9621557 /* Pods_MLKitChallenge_MLKitChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -103,10 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7F673672A5B1FF300D8B01B /* Build configuration list for PBXNativeTarget "MLKitChallenge" */;
 			buildPhases = (
+				64CBAA24911C456E2D60452F /* [CP] Check Pods Manifest.lock */,
 				B7F6734E2A5B1FF300D8B01B /* Headers */,
 				B7F6734F2A5B1FF300D8B01B /* Sources */,
 				B7F673502A5B1FF300D8B01B /* Frameworks */,
 				B7F673512A5B1FF300D8B01B /* Resources */,
+				64C28D233743CE381EC70EEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -121,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7F6736A2A5B1FF300D8B01B /* Build configuration list for PBXNativeTarget "MLKitChallengeTests" */;
 			buildPhases = (
+				939B3DEE8103BFBE353343C1 /* [CP] Check Pods Manifest.lock */,
 				B7F673592A5B1FF300D8B01B /* Sources */,
 				B7F6735A2A5B1FF300D8B01B /* Frameworks */,
 				B7F6735B2A5B1FF300D8B01B /* Resources */,
+				EA54C6B5F7DCA76A11EE91F7 /* [CP] Embed Pods Frameworks */,
+				8A7E125F14CB7FC4FA7777F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +226,104 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64C28D233743CE381EC70EEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge/Pods-MLKitChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge/Pods-MLKitChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge/Pods-MLKitChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64CBAA24911C456E2D60452F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLKitChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A7E125F14CB7FC4FA7777F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		939B3DEE8103BFBE353343C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLKitChallenge-MLKitChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA54C6B5F7DCA76A11EE91F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7F6734F2A5B1FF300D8B01B /* Sources */ = {
@@ -339,6 +475,7 @@
 		};
 		B7F673682A5B1FF300D8B01B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D987BB80BAC0650BC964692A /* Pods-MLKitChallenge.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -370,6 +507,7 @@
 		};
 		B7F673692A5B1FF300D8B01B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43877EF3A97890D3C345E963 /* Pods-MLKitChallenge.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -401,6 +539,7 @@
 		};
 		B7F6736B2A5B1FF300D8B01B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFDC6CD65682856F27D0F1A /* Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -417,6 +556,7 @@
 		};
 		B7F6736C2A5B1FF300D8B01B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D854FBE0AD2C90478A09D26C /* Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
