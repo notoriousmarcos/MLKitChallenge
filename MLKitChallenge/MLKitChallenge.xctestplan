@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "7FEE9F5A-B79C-4670-8425-944B6194F03A",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MLKitChallenge.xcodeproj",
+        "identifier" : "B7F6735C2A5B1FF300D8B01B",
+        "name" : "MLKitChallengeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

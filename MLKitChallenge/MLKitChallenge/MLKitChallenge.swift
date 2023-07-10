@@ -6,7 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
 public class MLKitChallenge {
 
+  public init() {
+
+  }
+
+  public func getCameraView() -> some View {
+    return CameraView()
+  }
 }

@@ -13,9 +13,18 @@
 		B7F6735E2A5B1FF300D8B01B /* MLKitChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F673532A5B1FF300D8B01B /* MLKitChallenge.framework */; };
 		B7F673632A5B1FF300D8B01B /* MLKitChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673622A5B1FF300D8B01B /* MLKitChallengeTests.swift */; };
 		B7F673642A5B1FF300D8B01B /* MLKitChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F673562A5B1FF300D8B01B /* MLKitChallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7F6736F2A5B25AD00D8B01B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6736E2A5B25AD00D8B01B /* CameraView.swift */; };
+		B7F6736F2A5B25AD00D8B01B /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6736E2A5B25AD00D8B01B /* CameraPreview.swift */; };
 		B7F673712A5B264400D8B01B /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673702A5B264400D8B01B /* VideoPreviewView.swift */; };
 		B7F673B92A5C421500D8B01B /* MLKitChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673B82A5C421500D8B01B /* MLKitChallenge.swift */; };
+		B7F673C52A5C53A700D8B01B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673C42A5C53A700D8B01B /* Photo.swift */; };
+		B7F673C62A5C57DE00D8B01B /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673BF2A5C532200D8B01B /* ImageResizer.swift */; };
+		B7F673C72A5C57E000D8B01B /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673C02A5C532200D8B01B /* PhotoCaptureProcessor.swift */; };
+		B7F673C82A5C57E400D8B01B /* CameraService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673C22A5C532200D8B01B /* CameraService+Extensions.swift */; };
+		B7F673C92A5C57E600D8B01B /* CameraService+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673BE2A5C532200D8B01B /* CameraService+Enums.swift */; };
+		B7F673CA2A5C57E900D8B01B /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673C12A5C532200D8B01B /* CameraService.swift */; };
+		B7F673CC2A5C59A700D8B01B /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673CB2A5C59A700D8B01B /* CameraViewModel.swift */; };
+		B7F673CF2A5C5A3700D8B01B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673CE2A5C5A3700D8B01B /* CameraView.swift */; };
+		B7F673D32A5C5D9C00D8B01B /* CameraServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673D22A5C5D9C00D8B01B /* CameraServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +46,18 @@
 		B7F673572A5B1FF300D8B01B /* MLKitChallenge.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MLKitChallenge.docc; sourceTree = "<group>"; };
 		B7F6735D2A5B1FF300D8B01B /* MLKitChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLKitChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F673622A5B1FF300D8B01B /* MLKitChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitChallengeTests.swift; sourceTree = "<group>"; };
-		B7F6736E2A5B25AD00D8B01B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B7F6736E2A5B25AD00D8B01B /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		B7F673702A5B264400D8B01B /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
 		B7F673B82A5C421500D8B01B /* MLKitChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitChallenge.swift; sourceTree = "<group>"; };
+		B7F673BE2A5C532200D8B01B /* CameraService+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraService+Enums.swift"; sourceTree = "<group>"; };
+		B7F673BF2A5C532200D8B01B /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		B7F673C02A5C532200D8B01B /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		B7F673C12A5C532200D8B01B /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		B7F673C22A5C532200D8B01B /* CameraService+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraService+Extensions.swift"; sourceTree = "<group>"; };
+		B7F673C42A5C53A700D8B01B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B7F673CB2A5C59A700D8B01B /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		B7F673CE2A5C5A3700D8B01B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B7F673D22A5C5D9C00D8B01B /* CameraServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceTests.swift; sourceTree = "<group>"; };
 		D64ECFAD8D27CC81A358254E /* Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED2F3EFD0B82C90DF386DE06 /* libPods-MLKitChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLKitChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75BBB39382063ACB0838B0 /* Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +119,8 @@
 		B7F673552A5B1FF300D8B01B /* MLKitChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B7F673C32A5C539B00D8B01B /* Model */,
+				B7F673BC2A5C531300D8B01B /* Service */,
 				B7F6736D2A5B25A000D8B01B /* UI */,
 				B7F673562A5B1FF300D8B01B /* MLKitChallenge.h */,
 				B7F673572A5B1FF300D8B01B /* MLKitChallenge.docc */,
@@ -112,6 +132,7 @@
 		B7F673612A5B1FF300D8B01B /* MLKitChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				B7F673D02A5C5D7D00D8B01B /* Service */,
 				B7F673622A5B1FF300D8B01B /* MLKitChallengeTests.swift */,
 			);
 			path = MLKitChallengeTests;
@@ -120,10 +141,64 @@
 		B7F6736D2A5B25A000D8B01B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B7F6736E2A5B25AD00D8B01B /* CameraView.swift */,
-				B7F673702A5B264400D8B01B /* VideoPreviewView.swift */,
+				B7F673CD2A5C5A2200D8B01B /* Preview */,
+				B7F673CB2A5C59A700D8B01B /* CameraViewModel.swift */,
+				B7F673CE2A5C5A3700D8B01B /* CameraView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		B7F673BC2A5C531300D8B01B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B7F673BD2A5C531B00D8B01B /* Camera */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B7F673BD2A5C531B00D8B01B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B7F673C12A5C532200D8B01B /* CameraService.swift */,
+				B7F673BE2A5C532200D8B01B /* CameraService+Enums.swift */,
+				B7F673C22A5C532200D8B01B /* CameraService+Extensions.swift */,
+				B7F673BF2A5C532200D8B01B /* ImageResizer.swift */,
+				B7F673C02A5C532200D8B01B /* PhotoCaptureProcessor.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B7F673C32A5C539B00D8B01B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7F673C42A5C53A700D8B01B /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7F673CD2A5C5A2200D8B01B /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				B7F6736E2A5B25AD00D8B01B /* CameraPreview.swift */,
+				B7F673702A5B264400D8B01B /* VideoPreviewView.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		B7F673D02A5C5D7D00D8B01B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B7F673D12A5C5D8800D8B01B /* Camera */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B7F673D12A5C5D8800D8B01B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B7F673D22A5C5D9C00D8B01B /* CameraServiceTests.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		C7062F27CACC3E82E4BFA9BF /* Frameworks */ = {
@@ -329,10 +404,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F673CA2A5C57E900D8B01B /* CameraService.swift in Sources */,
+				B7F673C52A5C53A700D8B01B /* Photo.swift in Sources */,
 				B7F673712A5B264400D8B01B /* VideoPreviewView.swift in Sources */,
+				B7F673CF2A5C5A3700D8B01B /* CameraView.swift in Sources */,
 				B7F673582A5B1FF300D8B01B /* MLKitChallenge.docc in Sources */,
-				B7F6736F2A5B25AD00D8B01B /* CameraView.swift in Sources */,
+				B7F6736F2A5B25AD00D8B01B /* CameraPreview.swift in Sources */,
+				B7F673C72A5C57E000D8B01B /* PhotoCaptureProcessor.swift in Sources */,
+				B7F673C62A5C57DE00D8B01B /* ImageResizer.swift in Sources */,
+				B7F673CC2A5C59A700D8B01B /* CameraViewModel.swift in Sources */,
+				B7F673C82A5C57E400D8B01B /* CameraService+Extensions.swift in Sources */,
 				B7F673B92A5C421500D8B01B /* MLKitChallenge.swift in Sources */,
+				B7F673C92A5C57E600D8B01B /* CameraService+Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F673D32A5C5D9C00D8B01B /* CameraServiceTests.swift in Sources */,
 				B7F673632A5B1FF300D8B01B /* MLKitChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,10 @@ import SwiftUI
 
 @main
 struct SampleAppApp: App {
+  let mlkitChallenge = MLKitChallenge()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          mlkitChallenge.getCameraView()
         }
     }
 }

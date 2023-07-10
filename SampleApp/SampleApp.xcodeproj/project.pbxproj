@@ -15,7 +15,7 @@
 		B7F6739A2A5B29F700D8B01B /* SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673992A5B29F700D8B01B /* SampleAppUITests.swift */; };
 		B7F6739C2A5B29F700D8B01B /* SampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6739B2A5B29F700D8B01B /* SampleAppUITestsLaunchTests.swift */; };
 		B7F673B52A5C3C2B00D8B01B /* MLKitChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F673B42A5C3C2B00D8B01B /* MLKitChallenge.framework */; };
-		B7F673B62A5C3C2B00D8B01B /* MLKitChallenge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7F673B42A5C3C2B00D8B01B /* MLKitChallenge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7F673B62A5C3C2B00D8B01B /* MLKitChallenge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7F673B42A5C3C2B00D8B01B /* MLKitChallenge.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -450,6 +450,7 @@
 				DEVELOPMENT_TEAM = 66KNLMFJQ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,6 +481,7 @@
 				DEVELOPMENT_TEAM = 66KNLMFJQ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

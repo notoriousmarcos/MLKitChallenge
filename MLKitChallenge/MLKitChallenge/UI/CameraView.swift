@@ -2,86 +2,137 @@
 //  CameraView.swift
 //  MLKitChallenge
 //
-//  Created by Marcos Vinicius Brito on 09/07/23.
+//  Created by Marcos Vinicius Brito on 10/07/23.
 //
 
-import UIKit
-import AVFoundation
 import SwiftUI
 
-struct CameraPreview: UIViewRepresentable {
-  class VideoPreviewView: UIView {
-    public override class var layerClass: AnyClass {
-      AVCaptureVideoPreviewLayer.self
+struct CameraView: View {
+  @StateObject var model = CameraViewModel()
+
+  @State var currentZoomFactor: CGFloat = 1.0
+
+  var captureButton: some View {
+    Button(action: {
+      model.capturePhoto()
+    }, label: {
+      Circle()
+        .foregroundColor(.white)
+        .frame(width: 80, height: 80, alignment: .center)
+        .overlay(
+          Circle()
+            .stroke(Color.black.opacity(0.8), lineWidth: 2)
+            .frame(width: 65, height: 65, alignment: .center)
+        )
+    })
+  }
+
+  var capturedPhotoThumbnail: some View {
+    Group {
+      if model.photo != nil {
+        Image(uiImage: model.photo.image!)
+          .resizable()
+          .aspectRatio(contentMode: .fill)
+          .frame(width: 60, height: 60)
+          .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+          .animation(.spring())
+
+      } else {
+        RoundedRectangle(cornerRadius: 10)
+          .frame(width: 60, height: 60, alignment: .center)
+          .foregroundColor(.black)
+      }
     }
+  }
 
-    var videoPreviewLayer: AVCaptureVideoPreviewLayer {
-      return layer as! AVCaptureVideoPreviewLayer
-    }
+  var flipCameraButton: some View {
+    Button(action: {
+      model.flipCamera()
+    }, label: {
+      Circle()
+        .foregroundColor(Color.gray.opacity(0.2))
+        .frame(width: 45, height: 45, alignment: .center)
+        .overlay(
+          Image(systemName: "camera.rotate.fill")
+            .foregroundColor(.white))
+    })
+  }
 
-    let focusView: UIView = {
-      let focusView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-      focusView.layer.borderColor = UIColor.white.cgColor
-      focusView.layer.borderWidth = 1.5
-      focusView.layer.cornerRadius = 25
-      focusView.layer.opacity = 0
-      focusView.backgroundColor = .clear
-      return focusView
-    }()
+  var body: some View {
+    NavigationView {
+      GeometryReader { reader in
+        ZStack {
+          Color.black.edgesIgnoringSafeArea(.all)
 
-    @objc func focusAndExposeTap(gestureRecognizer: UITapGestureRecognizer) {
-      let layerPoint = gestureRecognizer.location(in: gestureRecognizer.view)
-      let devicePoint = videoPreviewLayer.captureDevicePointConverted(fromLayerPoint: layerPoint)
+          VStack {
+            Button(action: {
+              model.switchFlash()
+            }, label: {
+              Image(systemName: model.isFlashOn ? "bolt.fill" : "bolt.slash.fill")
+                .font(.system(size: 20, weight: .medium, design: .default))
+            })
+            .accentColor(model.isFlashOn ? .yellow : .white)
 
-      self.focusView.layer.frame = CGRect(origin: layerPoint, size: CGSize(width: 50, height: 50))
+            CameraPreview(session: model.session)
+              .gesture(
+                DragGesture().onChanged({ (val) in
+                  //  Only accept vertical drag
+                  if abs(val.translation.height) > abs(val.translation.width) {
+                    //  Get the percentage of vertical screen space covered by drag
+                    let percentage: CGFloat = -(val.translation.height / reader.size.height)
+                    //  Calculate new zoom factor
+                    let calc = currentZoomFactor + percentage
+                    //  Limit zoom factor to a maximum of 5x and a minimum of 1x
+                    let zoomFactor: CGFloat = min(max(calc, 1), 5)
+                    //  Store the newly calculated zoom factor
+                    currentZoomFactor = zoomFactor
+                    //  Sets the zoom factor to the capture device session
+                    model.zoom(with: zoomFactor)
+                  }
+                })
+              )
+              .onAppear {
+                model.configure()
+              }
+              .alert(isPresented: $model.showAlertError, content: {
+                Alert(title: Text(model.alertError.title), message: Text(model.alertError.message), dismissButton: .default(Text(model.alertError.primaryButtonTitle), action: {
+                  model.alertError.primaryAction?()
+                }))
+              })
+              .overlay(
+                Group {
+                  if model.willCapturePhoto {
+                    Color.black
+                  }
+                }
+              )
+              .animation(.easeInOut)
 
 
-      NotificationCenter.default.post(.init(name: .init("UserDidRequestNewFocusPoint"), object: nil, userInfo: ["devicePoint": devicePoint] as [AnyHashable: Any]))
+            HStack {
+              NavigationLink(destination: Text("Detail photo")) {
+                capturedPhotoThumbnail
+              }
 
-      UIView.animate(withDuration: 0.3, animations: {
-        self.focusView.layer.opacity = 1
-      }) { (completed) in
-        if completed {
-          UIView.animate(withDuration: 0.3) {
-            self.focusView.layer.opacity = 0
+              Spacer()
+
+              captureButton
+
+              Spacer()
+
+              flipCameraButton
+
+            }
+            .padding(.horizontal, 20)
           }
         }
       }
     }
-
-    override func layoutSubviews() {
-      super.layoutSubviews()
-
-      self.layer.addSublayer(focusView.layer)
-
-      let gRecognizer = UITapGestureRecognizer(target: self, action: #selector(VideoPreviewView.focusAndExposeTap(gestureRecognizer:)))
-      self.addGestureRecognizer(gRecognizer)
-    }
-  }
-
-  let session: AVCaptureSession
-
-  init(session: AVCaptureSession) {
-    self.session = session
-  }
-
-  func makeUIView(context: Context) -> VideoPreviewView {
-    let viewFinder = VideoPreviewView()
-    viewFinder.backgroundColor = .black
-    viewFinder.videoPreviewLayer.cornerRadius = 0
-    viewFinder.videoPreviewLayer.session = session
-    viewFinder.videoPreviewLayer.connection?.videoOrientation = .portrait
-    return viewFinder
-  }
-
-  func updateUIView(_ uiView: VideoPreviewView, context: Context) {
-
   }
 }
 
-struct CameraPreview_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    CameraPreview(session: AVCaptureSession())
-      .frame(height: 300)
+    CameraView()
   }
 }
