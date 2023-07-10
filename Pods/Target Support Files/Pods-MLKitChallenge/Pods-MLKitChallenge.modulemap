@@ -1,0 +1,6 @@
+module Pods_MLKitChallenge {
+  umbrella header "Pods-MLKitChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

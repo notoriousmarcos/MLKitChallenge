@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MLKitChallenge.xcodeproj">
+      location = "group:SampleApp/SampleApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MLKitChallenge/MLKitChallenge.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
