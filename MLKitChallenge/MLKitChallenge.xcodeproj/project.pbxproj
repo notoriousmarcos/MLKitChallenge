@@ -15,6 +15,7 @@
 		B7F673642A5B1FF300D8B01B /* MLKitChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F673562A5B1FF300D8B01B /* MLKitChallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7F6736F2A5B25AD00D8B01B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6736E2A5B25AD00D8B01B /* CameraView.swift */; };
 		B7F673712A5B264400D8B01B /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673702A5B264400D8B01B /* VideoPreviewView.swift */; };
+		B7F673B92A5C421500D8B01B /* MLKitChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F673B82A5C421500D8B01B /* MLKitChallenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B7F673622A5B1FF300D8B01B /* MLKitChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitChallengeTests.swift; sourceTree = "<group>"; };
 		B7F6736E2A5B25AD00D8B01B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		B7F673702A5B264400D8B01B /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
+		B7F673B82A5C421500D8B01B /* MLKitChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitChallenge.swift; sourceTree = "<group>"; };
 		D64ECFAD8D27CC81A358254E /* Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED2F3EFD0B82C90DF386DE06 /* libPods-MLKitChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLKitChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75BBB39382063ACB0838B0 /* Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MLKitChallenge-MLKitChallengeTests/Pods-MLKitChallenge-MLKitChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				B7F6736D2A5B25A000D8B01B /* UI */,
 				B7F673562A5B1FF300D8B01B /* MLKitChallenge.h */,
 				B7F673572A5B1FF300D8B01B /* MLKitChallenge.docc */,
+				B7F673B82A5C421500D8B01B /* MLKitChallenge.swift */,
 			);
 			path = MLKitChallenge;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				B7F673712A5B264400D8B01B /* VideoPreviewView.swift in Sources */,
 				B7F673582A5B1FF300D8B01B /* MLKitChallenge.docc in Sources */,
 				B7F6736F2A5B25AD00D8B01B /* CameraView.swift in Sources */,
+				B7F673B92A5C421500D8B01B /* MLKitChallenge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
